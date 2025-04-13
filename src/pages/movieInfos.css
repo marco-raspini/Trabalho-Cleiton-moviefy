@@ -1,0 +1,135 @@
+/* movieinfos.css */
+
+.movie-info-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+  /* Fundo escuro similar ao Spotify */
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.movie-info-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1db954;
+  /* Cor de destaque do Spotify */
+}
+
+.movie-info-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #b3b3b3;
+}
+
+.movie-info-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.movie-info-container button {
+  background-color: #1db954;
+  /* Cor do botão inspirada no Spotify */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.movie-info-container button:hover {
+  background-color: #1ed760;
+  /* Cor do botão ao passar o mouse */
+}
+
+.movie-info-container iframe {
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 560px;
+  /* Garante que o iframe não fique muito grande */
+}
+
+.movie-info-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1db954;
+}
+
+.movie-link {
+  color: #F0EFE7;
+  text-decoration: none
+}
+
+
+.movie-info-container .overview {
+  text-align: justify;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.movie-info-container .loading {
+  font-size: 1.5rem;
+  color: #b3b3b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .movie-info-container {
+    padding: 20px;
+  }
+
+  .movie-info-container h1 {
+    font-size: 2rem;
+    /* Reduz o tamanho da fonte em telas menores */
+  }
+
+  .movie-info-container p {
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .movie-info-container button {
+    font-size: 0.9rem;
+    /* Ajusta o tamanho da fonte do botão */
+    padding: 8px 16px;
+  }
+
+  .movie-info-container img {
+    max-width: 80%;
+    /* Ajusta o tamanho da imagem para telas menores */
+  }
+
+  .movie-info-container iframe {
+    max-width: 100%;
+    /* Garante que o iframe ocupe o espaço disponível */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-info-container h1 {
+    font-size: 1.8rem;
+    /* Reduz ainda mais o tamanho do título em telas pequenas */
+  }
+
+  .movie-info-container button {
+    width: 100%;
+    /* Faz o botão ocupar toda a largura em telas pequenas */
+  }
+
+  .movie-info-container img {
+    max-width: 90%;
+    /* Imagem ocupa mais espaço em telas pequenas */
+  }
+}
